@@ -34,7 +34,7 @@ public class Main {
         XYSeries aStarDatasetConstant = new XYSeries("Алгоритм А* (Константа)");
         long start, end, time;
         //Поиск кратчайшего пути в плотных и разряженных графах с положительными весами рёбер
-        for (int vertexCount = 5; vertexCount <= 500; vertexCount +=10) {
+        for (int vertexCount = 5; vertexCount <= 1000; vertexCount +=10) {
             System.out.println(vertexCount);
             //Ассоциативный массив для хранения координат вершин
             HashMap<Integer, Point> vertexCoordsDense = new HashMap<>();
@@ -300,7 +300,7 @@ public class Main {
 
     //Функция для сохранения графика
     private static void saveLineChartAsPNG(String fileName, JFreeChart chart) {
-        File lineChart = new File(fileName);
+        File lineChart = new File("images/"+fileName);
         try {
             ChartUtilities.saveChartAsPNG(lineChart, chart, 980, 605);
         } catch (IOException e) {
