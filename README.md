@@ -8,5 +8,6 @@
 #### Stack
 * JGraphT
 * JFreeChart
-## Result example:
-
+## Results examples:
+![Graphic](images/DijAStarDense.png)
+![Graphic](images/BellmanFord.png)
